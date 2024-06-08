@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Chiron360</title>
+    <link rel="stylesheet" href="styles.css">
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+    {
+        "imports": {
+          "three": "https://unpkg.com/three@v0.163.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@v0.163.0/examples/jsm/"
+        }
+    }
+    </script>
+</head>
+<body>
+    <div id="heading">
+        <h1>Bugatti Chiron</h1>
+        <div class="border"></div>
+    </div>
+    <div id="progress-container">
+        <div id="progress">Loading...</div>
+    </div>
+    <main></main>
+    <div id="specifications">
+        <div class="spec-item" data-part="front">Front</div>
+        <div class="spec-item" data-part="back">Back</div>
+        <div class="spec-item" data-part="top">Top</div>
+        <div class="spec-item" data-part="engine">Engine</div>
+        <div class="spec-item" data-part="wheels">Wheels</div>
+    </div>
+    <div id="explanation" class="hidden"></div> <!-- Placeholder for explanations -->
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
